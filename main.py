@@ -23,7 +23,7 @@ def changeBG(path):
 
 hour = int(datetime.now().hour)
 
-BG = input("Input B(bliss) or F(fluent) and you can select your files just input SF(select files) : ")
+BG = input("Input B(bliss) or F(fluent) and you can select your files just input SF(select files) for stop just press (Ctrl + Break) : ")
 
 def restartab():
 	'''This is a function that sends another function that calls this for BLISS'''
@@ -420,3 +420,5 @@ if BG == 'SF':
 	sf_night = input('Input night wallpaper')
 
 	restartsfa()
+
+
