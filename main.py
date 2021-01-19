@@ -4,6 +4,7 @@
 
 import ctypes
 import time
+import datetime
 
 #This is a wallpaper ad. Here you can change the default wallpaper to your own
 bliss_day = 'C:\\Users\\danv4\\OneDrive\\Документы\\DДемки\\Сменна обоев\\Bliss Day.png'
@@ -27,7 +28,7 @@ def changeBG(path):
 	ctypes.windll.user32.SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, path, 0)
 
 a = 1
-b = 1
+
 if BG == 'B' or BG == 'b':
 	while a == 1:
 		if hour>= 6 and hour<12:
@@ -44,7 +45,7 @@ if BG == 'B' or BG == 'b':
 			continue
 
 if BG == 'F' or BG == 'f':
-	while b == 1:
+	while a == 1:
 		if hour>= 6 and hour<12:
 			changeBG(fluent_day)
 			time.sleep(1)
@@ -60,11 +61,11 @@ if BG == 'F' or BG == 'f':
 
 if BG == 'SF':
 
-	sf_day = input('Input day wallpaper:')
-	sf_dusk = input('Input dusk wallpaper:')
-	sf_night = input('Input night wallpaper:')
+	sf_day = input('Input day wallpaper: ')
+	sf_dusk = input('Input dusk wallpaper: ')
+	sf_night = input('Input night wallpaper: ')
 
-	while b == 1:
+	while a == 1:
 		if hour>= 6 and hour<12:
 			changeBG(sf_day)
 			time.sleep(1)
