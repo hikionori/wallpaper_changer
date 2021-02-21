@@ -1,5 +1,5 @@
 '''Avtor: Danila (hikionori) Verbinsky
-   Version: 0.2(beta)
+   Version: 1.0(beta)
 '''
 
 import ctypes
